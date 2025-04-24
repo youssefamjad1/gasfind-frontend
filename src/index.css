@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* App.css or MapView.css */
+#map {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
