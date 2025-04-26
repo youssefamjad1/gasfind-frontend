@@ -14,7 +14,7 @@ const api = axios.create({
 // Function to get nearby stations with optional sorting
 export const getNearbyStations = async (lat, lng, sortBy = 'price') => {
   try {
-    const { data } = await api.get(`/stations?lat=${lat}&lng=${lng}&sortBy=${sortBy}`);
+    const { data } = await api.get(`stations?lat=${lat}&lng=${lng}&sortBy=${sortBy}`);
     return data;
   } catch (error) {
     console.error("Error fetching nearby stations:", error.message || error);
@@ -25,7 +25,7 @@ export const getNearbyStations = async (lat, lng, sortBy = 'price') => {
 // Function to add a new station
 export const addStation = async (stationData) => {
   try {
-    const { data } = await api.post('/stations', stationData);
+    const { data } = await api.post('stations', stationData);
     return data;
   } catch (error) {
     console.error("Error adding station:", error.message || error);
@@ -36,7 +36,7 @@ export const addStation = async (stationData) => {
 // Function to get a station by its ID
 export const getStationById = async (id) => {
   try {
-    const { data } = await api.get(`/stations/${id}`);
+    const { data } = await api.get(`stations/${id}`);
     return data;
   } catch (error) {
     console.error("Error fetching station:", error.message || error);
