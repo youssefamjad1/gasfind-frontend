@@ -10,7 +10,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center space-x-4">
             <a
-              href="https://github.com/yourusername/gas-station-finder"
+              href="https://github.com/youssefamjad1/GasFind"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"
